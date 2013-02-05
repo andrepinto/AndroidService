@@ -1,0 +1,46 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnStartServiceIntent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Service Intent" />
+        
+        <Button
+            android:id="@+id/btnStartService"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Service" />
+        
+        <Button
+            android:id="@+id/btnStartServiceForeground"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Foreground Service" />
+
+        <TextView
+            android:id="@+id/txState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="..." />
+
+        <TextView
+            android:id="@+id/txState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/services_1" />
+
+       
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    
+    <string name="simple_thread">Threads dedicadas não são a melhor escolha para melhor a resposta do UI \n Devemos ter em conta a existencia de AsyncTask</string>
+	<string name="asynctask_1">Desenhada especialmente para a manutenção das resposta do UI, encapsula abordagem comum thread/ui</string>
+	<string name="asynctask_2">É dividida em várias fases:
+	\n -> onPreExecute: Recupera a informação do UI existente na thread principal
+	\n -> doBackground: Realiza o trabalho em background
+	\n -> publishProgress/onProgressUpdate: fornece a capacidade de actualizar o UI da thread principal
+	\n -> onPostExecute: apos a conclusão da UI da thread principal
+	\n\n Sequencia de execução garantida 
+	\n - onPreExecute completa antes de doBackground começar
+	\n - doBackground completa antes de onPostExecute começar 
+	</string>
+    
+	<string name="services_1">Service: É um component type do android e existe especialmente para realizar execuções longas e operações não referentes a UI\n
+	 \n Lifecycle
+	 \n -> onCreate: executado quando o servico é criado
+	 \n -> onStartCommand: executado cada vez que outro componente o Context.startService para este servico. Normalmente envia o trabalho para uma thread em background.
+	 \n -> onDestroy: chamado para notificar que o serviço será destroido
+	 </string>
+    
+</resources>
